@@ -1,0 +1,6 @@
+all:
+	tar -xvf autograde.tar >/dev/null 2>&1;\
+	cp hw4.tar autodiff/src ;\
+	cd autodiff/src ;\
+	tar -xvf hw4.tar ;\
+	python mlp_checker.py ;\
